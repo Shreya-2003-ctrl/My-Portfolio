@@ -146,9 +146,7 @@ const SkillsSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block text-primary font-mono text-sm mb-4">
-            // Skills & Technologies
-          </span>
+          
 
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             My <span className="gradient-text">Tech Stack</span>

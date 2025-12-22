@@ -49,7 +49,7 @@ const Contact = () => {
         </p>
       </div>
 
-      <div className="text-right mt-20 mr-20">
+      <div className="text-left mt-20 mr-20">
         <p className="font-bold text-2xl">Get In Touch</p>
         <p className="mt-4 text-base sm:text-lg md:text-xl text-blue-200 leading-relaxed">
           Whether you're looking for a developer, have a project in mind,<br />or just want to connect, I'd love to hear from you. Let's create<br />something amazing together!
