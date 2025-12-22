@@ -43,7 +43,7 @@ const Navigation = () => {
           </motion.a>
 
           {/* Desktop Navigation */}
-          <ul className="hidden md:flex items-center gap-8">
+          <ul className=" text-xl hidden md:flex items-center gap-8">
             {navLinks.map((link, index) => (
               <motion.li
                 key={link.name}

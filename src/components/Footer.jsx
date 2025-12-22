@@ -17,10 +17,10 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
+    { icon: Github, href: 'https://github.com/Shreya-2003-ctrl', label: 'GitHub' },
+    { icon: Linkedin, href: 'www.linkedin.com/in/shreya-roy-tech', label: 'LinkedIn' },
     { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
-    { icon: Mail, href: 'mailto:hello@alexmorgan.dev', label: 'Email' },
+    { icon: Mail, href: 'royshreya481@gmail.com', label: 'Email' },
   ];
 
   return (
@@ -111,16 +111,19 @@ const Footer = () => {
             <div className="space-y-3 text-sm text-muted-foreground">
               <p>
                 <span className="text-foreground">Email:</span>{' '}
-                <a href="mailto:hello@alexmorgan.dev" className="hover:text-primary transition-colors">
-                  hello@alexmorgan.dev
+                <a href="royshreya481@gmail.com" className="hover:text-primary transition-colors">
+                  royshreya481@gmail.com
                 </a>
               </p>
               <p>
-                <span className="text-foreground">Location:</span> San Francisco, CA
+                <span className="text-foreground">Location:</span> West Bengal , India
               </p>
               <p>
                 <span className="text-foreground">Availability:</span>{' '}
                 <span className="text-primary">Open to opportunities</span>
+              </p>
+              <p>
+                <span>Phone No:</span>
               </p>
             </div>
           </motion.div>
@@ -137,7 +140,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className="text-muted-foreground text-sm"
           >
-            © {currentYear} Alex Morgan. All rights reserved.
+            © {currentYear} Shreya Roy. All rights reserved.
           </motion.p>
 
           <motion.p
