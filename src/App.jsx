@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import Section from './components/Section'
 import About from './components/About'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
                        <Hero/>
                        <About/>
                        <Contact/>
+                       <Footer/>
                        
      
       <Section id="home" className="h-screen flex items-center justify-center"></Section>
