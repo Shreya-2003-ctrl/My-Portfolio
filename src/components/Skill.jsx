@@ -242,19 +242,19 @@ const SkillCard = ({ category, index }) => {
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.7, delay: index * 0.12 }}
-      whileHover={{ y: -8, scale: 1.03 }}
-      className="group relative rounded-2xl p-[1.5px]"
+      whileHover={{ y: -6 }}
+      className="relative rounded-2xl p-[1px]"
     >
-      {/* Gradient Border */}
+      {/* Gradient Border (ONLY border) */}
       <div
-        className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${gradients[category.color]} opacity-70`}
+        className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${gradients[category.color]} opacity-60`}
       />
 
       {/* Card */}
-      <div className="relative rounded-2xl bg-background/70 backdrop-blur-xl p-6 border border-white/10 transition-all duration-300 shadow-xl group-hover:shadow-2xl">
-        {/* Glow */}
+      <div className="relative rounded-2xl bg-background/80 backdrop-blur-xl p-6 shadow-lg">
+        {/* Soft Glow (contained, no bleed) */}
         <div
-          className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition pointer-events-none blur-xl ${glows[category.color]}`}
+          className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-60 transition pointer-events-none blur-lg ${glows[category.color]}`}
         />
 
         {/* Header */}
@@ -270,9 +270,7 @@ const SkillCard = ({ category, index }) => {
           {category.skills.map((skill, i) => (
             <div key={skill.name}>
               <div className="flex justify-between text-sm mb-2">
-                <span className="text-muted-foreground">
-                  {skill.name}
-                </span>
+                <span className="text-muted-foreground">{skill.name}</span>
                 <span className="font-mono text-xs text-muted-foreground">
                   {skill.level}%
                 </span>
@@ -297,6 +295,7 @@ const SkillCard = ({ category, index }) => {
     </motion.div>
   );
 };
+
 
 const SkillsSection = () => {
   const ref = useRef(null);

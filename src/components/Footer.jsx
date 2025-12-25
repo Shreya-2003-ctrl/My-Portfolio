@@ -303,14 +303,27 @@ const Footer = () => {
             Built with <Heart className="w-4 h-4 text-pink-500 fill-pink-500" /> using React & Tailwind
           </p>
 
-          <motion.button
-            onClick={scrollToTop}
-            whileHover={{ scale: 1.1, y: -2 }}
-            whileTap={{ scale: 0.95 }}
-            className="w-10 h-10 rounded-lg border border-white/10 bg-white/5 text-gray-400 hover:text-blue-400 hover:border-blue-400 transition"
-          >
-            <ArrowUp size={18} />
-          </motion.button>
+               <motion.button
+  onClick={scrollToTop}
+  whileHover={{ scale: 1.15, y: -4 }}
+  whileTap={{ scale: 0.9 }}
+  className="
+    relative w-12 h-12 rounded-full
+    flex items-center justify-center
+    bg-gradient-to-br from-blue-500 to-purple-600
+    text-white shadow-lg
+    hover:shadow-[0_0_30px_rgba(99,102,241,0.6)]
+    transition
+  "
+>
+  {/* Glow */}
+  <span className="absolute inset-0 rounded-full blur-xl opacity-40 bg-blue-500" />
+
+  {/* Icon */}
+  <ArrowUp size={22} className="relative z-10" />
+</motion.button>
+
+
         </div>
       </div>
     </footer>
