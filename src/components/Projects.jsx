@@ -320,9 +320,9 @@ const ProjectsSection = () => {
       <div className="max-w-6xl mx-auto px-6 space-y-10">
         <div className="text-center mb-14">
           <h2 className="text-4xl font-bold mb-4">
-            Selected <span className="text-blue-400">Projects</span>
+            Selected <span className="gradient-text bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-transparent">Projects</span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-muted-foreground max-w-2xl mx-auto mt-6 text-base sm:text-lg md:text-xl text-blue-200 leading-relaxed">
             Case-study driven projects focused on scalability, clean architecture,
             and real-world impact.
           </p>
