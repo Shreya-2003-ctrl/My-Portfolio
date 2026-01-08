@@ -317,10 +317,10 @@ const SkillsSection = () => {
           className="text-center mb-20"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-            My <span className="gradient-text">Tech Stack</span>
+            My <span className="gradient-text bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-transparent">Tech Stack</span>
           </h2>
 
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-muted-foreground max-w-2xl mx-auto mt-6 text-base sm:text-lg md:text-xl text-blue-200 leading-relaxed">
             A curated set of technologies I use to craft fast,
             scalable, and visually refined applications.
           </p>
