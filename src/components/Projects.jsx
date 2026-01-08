@@ -319,7 +319,7 @@ const ProjectsSection = () => {
     <section id="projects" className="py-28 relative">
       <div className="max-w-6xl mx-auto px-6 space-y-10">
         <div className="text-center mb-14">
-          <h2 className="text-4xl font-bold mb-4">
+          <h2 className="text-5xl font-bold mb-4">
             Selected <span className="gradient-text bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-transparent">Projects</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto mt-6 text-base sm:text-lg md:text-xl text-blue-200 leading-relaxed">
